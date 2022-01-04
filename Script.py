@@ -1,19 +1,19 @@
 class script(object):
     START_TXT = """ʜᴇʟʟᴏ {},
-ᴍʏ ɴᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a>, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ, ᴛʜᴀᴛs ᴀʟʟ, ɪ ᴡɪʟʟ ᴘʀᴏᴠɪᴅᴇ ᴍᴏᴠɪᴇs ᴛʜᴇʀᴇ ᴏʀ sᴇᴀʀᴄʜ ᴍᴏᴠɪᴇᴅ ɪɴʟɪɴᴇ ʜᴇʀᴇ 😍"""
+ᴍʏ ɴᴀᴍᴇ ɪs <a href=https://t.me/{}>{}</a>, ᴊᴜsᴛ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀs ᴀᴅᴍɪɴ 😍"""
     HELP_TXT = """Hᴇʏ {}
 𝐻𝑒𝑟𝑒 𝑖𝑠 𝑇ℎ𝑒 𝐻𝑒𝑙𝑝 𝐹𝑜𝑟 𝑀𝑦 𝐶𝑜𝑚𝑚𝑎𝑛𝑑𝑠."""
     ABOUT_TXT = """★ 𝑀𝑦 𝑁𝑎𝑚𝑒: {}
-★ 𝐿𝑖𝑏𝑟𝑎𝑟𝑦: Pʏʀᴏɢʀᴀᴍ
-★ 𝐿𝑎𝑛𝑔𝑢𝑎𝑔𝑒: Pʏᴛʜᴏɴ 3
-★ 𝐷𝑎𝑡𝑎𝑏𝑎𝑠𝑒: ᴍᴏɴɢᴏ DB
-★ 𝑠𝑒𝑟𝑣𝑒𝑟: Hᴇʀᴏᴋᴜ
-★ 𝐵𝑢𝑖𝑙𝑑 𝑆𝑡𝑎𝑡𝑢𝑠: v1.0.1 [ Bᴇᴛᴀ ]"""
+★ 𝐿𝑖𝑏𝑟𝑎𝑟𝑦 : Pʏʀᴏɢʀᴀᴍ
+★ 𝐿𝑎𝑛𝑔𝑢𝑎𝑔𝑒 : Pʏᴛʜᴏɴ 3
+★ 𝐷𝑎𝑡𝑎𝑏𝑎𝑠𝑒 : ᴍᴏɴɢᴏ DB
+★ 𝑠𝑒𝑟𝑣𝑒𝑟 : Hᴇʀᴏᴋᴜ
+★ 𝐵𝑢𝑖𝑙𝑑 𝑆𝑡𝑎𝑡𝑢𝑠 : v1.0.1 [ Bᴇᴛᴀ ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 ► Beast is a close source project. 
 ► Contact devs only for reporting bugs.  
 
-<i>DEVELOPER:</i>
+<b>ᴅᴇᴠᴇʟᴏᴘᴇʀ​:</b>
 ► <a href=https://t.me/Im_Tamilan_bot>Im Tamilan</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -93,8 +93,8 @@ This module only works for my admins
     STATUS_TXT = """★ ᴛᴏᴛᴀʟ ꜰɪʟᴇs: <code>{}</code>
 ➥ ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
 ➥ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
-➥ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code> ᴍɪʙ
-➥ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> ᴍɪʙ"""
+➥ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code> 
+➥ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>

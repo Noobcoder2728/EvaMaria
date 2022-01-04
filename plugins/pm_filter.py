@@ -414,11 +414,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "help":
         buttons = [[
-            InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
-            InlineKeyboardButton('Auto Filter', callback_data='autofilter')
+            InlineKeyboardButton('ᴍᴀɴᴜᴀʟ ꜰɪʟᴛᴇʀ​', callback_data='manuelfilter'),
+            InlineKeyboardButton('ᴀᴜᴛᴏ ꜰɪʟᴛᴇʀ​', callback_data='autofilter')
             ],[
-            InlineKeyboardButton('Connection', callback_data='coct'),
-            InlineKeyboardButton('Extra Mods', callback_data='extra')
+            InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛɪᴏɴ​', callback_data='coct'),
+            InlineKeyboardButton('ᴇxᴛʀᴀ ᴍᴏᴅs​', callback_data='extra')
             ],[
             InlineKeyboardButton('ʜᴏᴍᴇ', callback_data='start'),
             InlineKeyboardButton('sᴛᴀᴛᴜs', callback_data='stats')
@@ -612,7 +612,7 @@ async def auto_filter(client, msg, spoll=False):
     if imdb:
         cap = IMDB_TEMPLATE.format(
             query = search,
-            Title = imdb['title'],
+            title = imdb['title'],
             votes = imdb['votes'],
             aka = imdb["aka"],
             seasons = imdb["seasons"],

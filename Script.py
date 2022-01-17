@@ -11,13 +11,10 @@ class script(object):
 ★ 𝐵𝑢𝑖𝑙𝑑 𝑆𝑡𝑎𝑡𝑢𝑠 : v1.0.1 [ Bᴇᴛᴀ ]"""
     SOURCE_TXT = """<b>NOTE:</b>
 ► Beast is a close source project. 
-► Contact devs only for reporting bugs.  
-
-<b>ᴅᴇᴠᴇʟᴏᴘᴇʀ​:</b>
-► <a href=https://t.me/Im_Tamilan_bot>Im Tamilan</a>"""
+► Contact devs only for reporting bugs."""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
-- Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and Beast will respond whenever a keyword is found the message
 
 <b>NOTE:</b>
 1. 𝐁𝐄𝐀𝐒𝐓 should have admin privillage.
@@ -90,11 +87,11 @@ This module only works for my admins
 • /unban  - <code>to unban a user.</code>
 • /channel - <code>to get list of total connected channels</code>
 • /broadcast - <code>to broadcast a message to all users</code>"""
-    STATUS_TXT = """★ ᴛᴏᴛᴀʟ ꜰɪʟᴇs: <code>{}</code>
-➥ ᴛᴏᴛᴀʟ ᴜsᴇʀs: <code>{}</code>
-➥ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: <code>{}</code>
-➥ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: <code>{}</code> 
-➥ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ: <code>{}</code> """
+    STATUS_TXT = """➥ ᴛᴏᴛᴀʟ ꜰɪʟᴇs: {}
+➥ ᴛᴏᴛᴀʟ ᴜsᴇʀs: {} 
+➥ ᴛᴏᴛᴀʟ ᴄʜᴀᴛs: {} 
+➥ ᴜsᴇᴅ sᴛᴏʀᴀɢᴇ: {} 
+➥ ꜰʀᴇᴇ sᴛᴏʀᴀɢᴇ: {} """
     LOG_TEXT_G = """#NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>

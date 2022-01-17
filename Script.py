@@ -10,8 +10,7 @@ class script(object):
 ★ 𝑠𝑒𝑟𝑣𝑒𝑟 : Hᴇʀᴏᴋᴜ
 ★ 𝐵𝑢𝑖𝑙𝑑 𝑆𝑡𝑎𝑡𝑢𝑠 : v1.0.1 [ Bᴇᴛᴀ ]"""
     SOURCE_TXT = """<b>NOTE:</b>
-► Beast is a close source project. 
-► Contact devs only for reporting bugs."""
+► Beast is a close source project."""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and Beast will respond whenever a keyword is found the message

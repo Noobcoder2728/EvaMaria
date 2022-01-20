@@ -82,6 +82,31 @@ async def gen_link_batch(bot, message):
             msgs = await bot.get_messages(f_chat_id, list(range(c_msg, new_diff+1)))
             msgs_list += msgs
 
-            outlist = [] if chat_id in FILE_STORE_CHANNEL: string = f"{f_msg_id}_{l_msg_id}_{chat_id}" b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=") return await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
+            outlist =
+    if chat_id in FILE_STORE_CHANNEL:
+        string = f"{f_msg_id}_{l_msg_id}_{chat_id}"
+        b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
+        return await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=DSTORE-{b_64}")
 
-# file store without db channel for msg in msgs_list: if msg.empty or msg.service: continue if not msg.media: # only media messages supported. continue file_type = msg.media file = getattr(msg, file_type) file = { "file_id": file.file_id, "caption": msg.caption, "title": getattr(file, "file_name", ""), "size": file.file_size, } outlist.append(file) with open(f"batchmode_{message.from_user.id}.json", "w+") as out: json.dump(outlist, out) post = await bot.send_document(LOG_CHANNEL, f"batchmode_{message.from_user.id}.json", file_name="Batch.json", caption="⚠️Generated for filestore.") os.remove(f"batchmode_{message.from_user.id}.json") file_id, ref = unpack_new_file_id(post.document.file_id) await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")
+    # file store without db channel
+    for msg in msgs_list:
+        if msg.empty or msg.service:
+            continue
+        if not msg.media:
+            # only media messages supported.
+            continue
+        file_type = msg.media
+        file = getattr(msg, file_type)
+        file = {
+            "file_id": file.file_id,
+            "caption": msg.caption,
+            "title": getattr(file, "file_name", ""),
+            "size": file.file_size,
+        }
+        outlist.append(file)
+    with open(f"batchmode_{message.from_user.id}.json", "w+") as out:
+        json.dump(outlist, out)
+    post = await bot.send_document(LOG_CHANNEL, f"batchmode_{message.from_user.id}.json", file_name="Batch.json", caption="⚠️Generated for filestore.")
+    os.remove(f"batchmode_{message.from_user.id}.json")
+    file_id, ref = unpack_new_file_id(post.document.file_id)
+    await sts.edit(f"Here is your link https://t.me/{temp.U_NAME}?start=BATCH-{file_id}")

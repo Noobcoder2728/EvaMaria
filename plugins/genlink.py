@@ -82,7 +82,7 @@ async def gen_link_batch(bot, message):
             msgs = await bot.get_messages(f_chat_id, list(range(c_msg, new_diff+1)))
             msgs_list += msgs
 
-            outlist =
+            outlist = []
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
